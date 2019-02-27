@@ -17,9 +17,9 @@ public class PhotoController {
     private PhotoRepository photoRepository;
 
     @RequestMapping("/")
-    public String displayPhotos(ModelMap modelMap){
-        List<Photo> allPhotos = photoRepository.random5Photos();
-        modelMap.put("allPhotos", allPhotos);
+    public String display5PhotosOnHome(ModelMap modelMap){
+        List<Photo> random5Photos = photoRepository.random5Photos();
+        modelMap.put("random5Photos", random5Photos);
         return "home";
     }
 }

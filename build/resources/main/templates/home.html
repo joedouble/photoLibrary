@@ -12,32 +12,26 @@
     <div class="nav">
         <ul>
             <li class="home"><a href="#">Home</a></li>
-            <li class="tutorials"><a href="#">By Date</a></li>
-            <li class="about"><a href="#">By Category</a></li>
-
+            <li class="date"><a href="#">By Date</a></li>
+            <li class="alphabetically"><a href="#">Alphabetically</a></li>
+            <li class="alphabetically"><a href="#">By Tag</a></li>
         </ul>
     </div>
 
     <hr>
 
-    <!-- Portfolio Gallery Grid -->
     <div class="row">
-        <div class="column" th:each="p : ${allPhotos}">
+        <div class="column" th:each="p : ${random5Photos}">
             <div class="content">
                 <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">
-                <h3>My Work</h3>
-                <p>Lorem ipsum..</p>
+                <h3 th:text="'Name: ' + ${p.name}">Name</h3>
+                <p th:text="'Tag(s): ' + ${p.tag}">Tag</p>
             </div>
         </div>
     </div>
 
-    <!--<div class="content">
-        <img src="bear.jpg" alt="Bear" style="width:100%">
-        <h3>Some Other Work</h3>
-        <p>Lorem ipsum..</p>-->
 </div>
 
-<!-- END MAIN -->
 </div>
 </body>
 </html>

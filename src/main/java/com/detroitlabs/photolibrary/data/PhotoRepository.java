@@ -4,10 +4,7 @@ import com.detroitlabs.photolibrary.model.Photo;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 @Component
 public class PhotoRepository {
@@ -32,11 +29,10 @@ public class PhotoRepository {
     public List<Photo> random5Photos(){
 
         List<Photo> random5 =  new ArrayList<>();
-        Random random = new Random();
+        Collections.shuffle(ALL_PHOTOS);
 
         for (int i = 0; i < 5; i++){
-            int randomNum = random.nextInt(5-0) + 5;
-            random5.add(ALL_PHOTOS.get(randomNum));
+            random5.add(ALL_PHOTOS.get(i));
         }
         return random5;
     }
