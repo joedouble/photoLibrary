@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 @Component
 public class PhotoRepository {
@@ -31,9 +32,11 @@ public class PhotoRepository {
     public List<Photo> random5Photos(){
 
         List<Photo> random5 =  new ArrayList<>();
+        Random random = new Random();
 
         for (int i = 0; i < 5; i++){
-            random5.add(ALL_PHOTOS.get(i));
+            int randomNum = random.nextInt(5-0) + 5;
+            random5.add(ALL_PHOTOS.get(randomNum));
         }
         return random5;
     }

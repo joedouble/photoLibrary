@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deef5d76-4432-44dd-984f-a1c455c908c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/detroitlabs/photolibrary/controller/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/detroitlabs/photolibrary/controller/PhotoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/detroitlabs/photolibrary/data/PhotoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/detroitlabs/photolibrary/data/PhotoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/corvetteclassrocinanteexpanse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/rocinante.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/daedalus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/oneill.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/galaxyclassstartrek.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/enterprise.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/intrepidclassstartrek.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/voyager.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/jupiterclassbattlestar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/galactica.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/mercuryclassbattlestar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/pegasus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/nauvooexpanse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nauvoo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/unscinfinity.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/infinity.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ussdiscoverystartrek.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/discovery.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -81,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/detroitlabs/photolibrary/data/PhotoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="430">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1325#1326#0" expanded="true" />
@@ -276,7 +262,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551234049322" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551234265029" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -335,12 +321,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551222451312</updated>
       <workItem from="1551222455047" duration="648000" />
-      <workItem from="1551225011003" duration="7034000" />
+      <workItem from="1551225011003" duration="7277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7682000" />
+    <option name="totallyTimeSpent" value="7925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="1027" extended-state="0" />
@@ -503,7 +489,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/detroitlabs/photolibrary/data/PhotoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1325#1326#0" expanded="true" />
