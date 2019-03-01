@@ -21,15 +21,13 @@
 
     <hr>
 
-    <div class="row image-row">
-        <div class="column" th:each="p : ${random5Photos}">
-            <div class="content">
-                <a th:href="@{'/shipdetails/' + ${p.name}}">
-                    <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">
-                </a>
-                <h3 th:text="'Name: ' + ${p.name}">Name</h3>
-
-            </div>
+    <div class="row">
+        <div class="tag-column" th:each="tag : ${allTags}">
+                <div class="tag-content">
+                    <a class="tag" th:href="@{'/tag/' + ${tag.tagId}}">
+                        <h3 th:text="${tag.name}">Tag Name</h3>
+                    </a>
+                </div>
         </div>
     </div>
 

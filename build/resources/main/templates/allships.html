@@ -21,8 +21,8 @@
 
     <hr>
 
-    <div class="row image-row">
-        <div class="column" th:each="p : ${random5Photos}">
+    <div class="row">
+        <div class="column" th:each="p : ${allPhotos}">
             <div class="content">
                 <a th:href="@{'/shipdetails/' + ${p.name}}">
                     <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">

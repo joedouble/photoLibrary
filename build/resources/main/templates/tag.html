@@ -20,18 +20,21 @@
     </div>
 
     <hr>
-
     <div class="row image-row">
-        <div class="column" th:each="p : ${random5Photos}">
+        <div class="column" th:each="photo : ${photos}">
             <div class="content">
-                <a th:href="@{'/shipdetails/' + ${p.name}}">
-                    <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">
+                <a th:href="@{'/shipdetails/' + ${photo.name}}">
+                    <img img th:src="@{'/images/' + ${photo.name} + '.jpg'}" alt="jpg" style="width:100%">
                 </a>
-                <h3 th:text="'Name: ' + ${p.name}">Name</h3>
+                <h3 th:text="'Name: ' + ${photo.name}">Name</h3>
+                <div class="capitalize" th:text="'Tag: ' + ${tag.name}">Tag Name</div>
 
             </div>
         </div>
     </div>
+
+
+</div>
 
 </div>
 

@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/app.css}"/>
-    <title>Title</title>
+    <title>Ships of the Line</title>
 </head>
 <body>
 <div class="main">
 
-    <h1>Photo Gallery</h1>
+    <a th:href="@{/}" class="logo"><h1>Ships of the Line</h1></a>
     <div class="nav">
         <ul>
-            <li class="home"><a href="#">Home</a></li>
-            <li class="date"><a href="#">By Date</a></li>
-            <li class="alphabetically"><a href="#">Alphabetically</a></li>
-            <li class="tag"><a href="#">By Tag</a></li>
+            <li class="home"><a th:href="@{/}">Home</a></li>
+            <li class="home"><a th:href="@{/allships}">All Photos</a></li>
+            <li class="date"><a th:href="@{/bydate}">By Date</a></li>
+            <li class="alphabetically"><a th:href="@{/alphabetical}">Alphabetically</a></li>
+            <li class="tag"><a th:href="@{/tags}">By Tag</a></li>
         </ul>
     </div>
 
     <hr>
 
-    <div class="row">
+    <div class="row image-row">
         <div class="column" th:each="p : ${random5Photos}">
             <div class="content">
-                <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">
+                <a th:href="@{'/shipdetails/' + ${p.name}}">
+                    <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">
+                </a>
                 <h3 th:text="'Name: ' + ${p.name}">Name</h3>
-                <p th:text="'Tag(s): ' + ${p.tag}">Tag</p>
+
             </div>
         </div>
     </div>
 
 </div>
 
-</div>
 </body>
 </html>
