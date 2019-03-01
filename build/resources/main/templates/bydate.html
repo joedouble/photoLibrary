@@ -7,8 +7,9 @@
 </head>
 <body>
 <div class="main">
-
-    <a th:href="@{/}" class="logo"><h1>Ships of the Line</h1></a>
+    <a th:href="@{/}" class="logo">
+        <h1>Ships of the Line</h1>
+    </a>
     <div class="nav">
         <ul>
             <li class="home"><a th:href="@{/}">Home</a></li>
@@ -18,9 +19,7 @@
             <li class="tag"><a th:href="@{/tags}">By Tag</a></li>
         </ul>
     </div>
-
     <hr>
-
     <div class="row">
         <div class="column" th:each="p : ${photosByDate}">
             <div class="content">
@@ -32,8 +31,6 @@
             </div>
         </div>
     </div>
-
 </div>
-
 </body>
 </html>

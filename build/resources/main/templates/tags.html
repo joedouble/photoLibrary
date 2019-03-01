@@ -7,8 +7,9 @@
 </head>
 <body>
 <div class="main">
-
-    <a th:href="@{/}" class="logo"><h1>Ships of the Line</h1></a>
+    <a th:href="@{/}" class="logo">
+        <h1>Ships of the Line</h1>
+    </a>
     <div class="nav">
         <ul>
             <li class="home"><a th:href="@{/}">Home</a></li>
@@ -18,20 +19,16 @@
             <li class="tag"><a th:href="@{/tags}">By Tag</a></li>
         </ul>
     </div>
-
     <hr>
-
     <div class="row">
         <div class="tag-column" th:each="tag : ${allTags}">
-                <div class="tag-content">
-                    <a class="tag" th:href="@{'/tag/' + ${tag.tagId}}">
-                        <h3 th:text="${tag.name}">Tag Name</h3>
-                    </a>
-                </div>
+            <div class="tag-content">
+                <a class="tag" th:href="@{'/tag/' + ${tag.tagId}}">
+                    <h3 th:text="${tag.name}">Tag Name</h3>
+                </a>
+            </div>
         </div>
     </div>
-
 </div>
-
 </body>
 </html>

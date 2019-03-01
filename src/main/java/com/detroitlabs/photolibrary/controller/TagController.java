@@ -29,7 +29,7 @@ public class TagController {
     }
 
     @RequestMapping("/tag/{id}")
-    public String tagDetails(@PathVariable int id, ModelMap modelMap){
+    public String tagDetails(@PathVariable int id, ModelMap modelMap) {
 
         Tag tag = tagRepository.findByTagId(id);
         modelMap.put("tag", tag);

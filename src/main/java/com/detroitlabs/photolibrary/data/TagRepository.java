@@ -17,13 +17,13 @@ public class TagRepository {
             new Tag(1100, "battlestar galactica"),
             new Tag(1111, "halo"));
 
-    public List<Tag> getAllTags(){
+    public List<Tag> getAllTags() {
         return ALL_TAGS;
     }
 
-    public Tag findByTagId(int tagId){
-        for (Tag tag : ALL_TAGS){
-            if (tag.getTagId() == tagId){
+    public Tag findByTagId(int tagId) {
+        for (Tag tag : ALL_TAGS) {
+            if (tag.getTagId() == tagId) {
                 return tag;
             }
         }

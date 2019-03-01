@@ -47,7 +47,7 @@ public class PhotoRepository {
                 return photo1.getDateUploaded().compareTo(photo2.getDateUploaded());
             }
         });
-        return  photosToSortByDate;
+        return photosToSortByDate;
     }
 
     public Photo findByName(String name) {
@@ -59,7 +59,7 @@ public class PhotoRepository {
         return null;
     }
 
-    public List<Photo> getAlphabetically(){
+    public List<Photo> getAlphabetically() {
         List<Photo> photosToSortAlphabetically = new ArrayList<>();
         photosToSortAlphabetically.addAll(getAllPhotos());
 
@@ -72,12 +72,12 @@ public class PhotoRepository {
         return photosToSortAlphabetically;
     }
 
-    public List<Photo> findByTagId(int tagId){
+    public List<Photo> findByTagId(int tagId) {
 
         List<Photo> photosInTag = new ArrayList<>();
 
         for (Photo photo : ALL_PHOTOS) {
-            if (photo.getTagId() == tagId){
+            if (photo.getTagId() == tagId) {
                 photosInTag.add(photo);
             }
         }

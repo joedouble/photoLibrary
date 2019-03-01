@@ -7,8 +7,9 @@
 </head>
 <body>
 <div class="main">
-
-    <a th:href="@{/}" class="logo"><h1>Ships of the Line</h1></a>
+    <a th:href="@{/}" class="logo">
+        <h1>Ships of the Line</h1>
+    </a>
     <div class="nav">
         <ul>
             <li class="home"><a th:href="@{/}">Home</a></li>
@@ -18,9 +19,7 @@
             <li class="tag"><a th:href="@{/tags}">By Tag</a></li>
         </ul>
     </div>
-
     <hr>
-
     <div class="row image-row">
         <div class="column" th:each="p : ${random5Photos}">
             <div class="content">
@@ -28,12 +27,9 @@
                     <img th:src="@{'/images/' + ${p.name} + '.jpg'}" alt="jpg" style="width:100%">
                 </a>
                 <h3 th:text="'Name: ' + ${p.name}">Name</h3>
-
             </div>
         </div>
     </div>
-
 </div>
-
 </body>
 </html>

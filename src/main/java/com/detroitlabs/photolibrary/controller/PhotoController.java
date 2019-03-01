@@ -18,35 +18,35 @@ public class PhotoController {
     private PhotoRepository photoRepository;
 
     @RequestMapping("/")
-    public String display5PhotosOnHome(ModelMap modelMap){
+    public String display5PhotosOnHome(ModelMap modelMap) {
         List<Photo> random5Photos = photoRepository.random5Photos();
         modelMap.put("random5Photos", random5Photos);
         return "home";
     }
 
     @RequestMapping("/shipdetails/{name}")
-    public String shipDetails(@PathVariable String name, ModelMap modelMap){
+    public String shipDetails(@PathVariable String name, ModelMap modelMap) {
         Photo photo = photoRepository.findByName(name);
         modelMap.put("photo", photo);
         return "shipdetails";
     }
 
     @RequestMapping("/allships")
-    public String allShips(ModelMap modelMap){
+    public String allShips(ModelMap modelMap) {
         List<Photo> allPhotos = photoRepository.getAllPhotos();
         modelMap.put("allPhotos", allPhotos);
         return "allships";
     }
 
     @RequestMapping("/bydate")
-    public String shipsByDate(ModelMap modelMap){
+    public String shipsByDate(ModelMap modelMap) {
         List<Photo> photosByDate = photoRepository.getByDate();
         modelMap.put("photosByDate", photosByDate);
         return "bydate";
     }
 
     @RequestMapping("/alphabetical")
-    public String shipsAlphabetically(ModelMap modelMap){
+    public String shipsAlphabetically(ModelMap modelMap) {
         List<Photo> photosAlphabetically = photoRepository.getAlphabetically();
         modelMap.put("photosAlphabetically", photosAlphabetically);
         return "alphabetical";
