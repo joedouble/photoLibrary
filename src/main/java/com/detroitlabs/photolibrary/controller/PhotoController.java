@@ -54,7 +54,7 @@ public class PhotoController {
         return "alphabetical";
     }
 
-    @RequestMapping(value = "/", params = "q")
+    @RequestMapping(value = {"/", "/allships", "/bydate", "/alphabetical", "/tags", "/tag/1???"}, params = "q")
     public String searchPhotos(@RequestParam("q") String searchTerm, ModelMap modelMap) {
         List<Photo> searchResults = photoRepository.searchByName(searchTerm);
         modelMap.put("searchResults", searchResults);
