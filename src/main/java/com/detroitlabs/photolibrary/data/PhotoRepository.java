@@ -84,4 +84,16 @@ public class PhotoRepository {
         return photosInTag;
     }
 
+    public List<Photo> searchByName(String name) {
+
+        List<Photo> searchResultsArray = new ArrayList<>();
+
+        for (Photo photo : ALL_PHOTOS) {
+            if (photo.getName().contains(name)) {
+                searchResultsArray.add(photo);
+            }
+        }
+        return searchResultsArray;
+    }
+
 }

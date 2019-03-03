@@ -17,6 +17,12 @@
             <li class="date"><a th:href="@{/bydate}">By Date</a></li>
             <li class="alphabetically"><a th:href="@{/alphabetical}">Alphabetically</a></li>
             <li class="tag"><a th:href="@{/tags}">By Tag</a></li>
+            <li>
+                <form method="get" action="#">
+                    <input type="text" name="q" maxlength="120"/>
+                    <input type="submit" value="search" class="tfbutton"/>
+                </form>
+            </li>
         </ul>
     </div>
     <hr>

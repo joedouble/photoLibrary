@@ -2,11 +2,13 @@ package com.detroitlabs.photolibrary.controller;
 
 import com.detroitlabs.photolibrary.data.PhotoRepository;
 import com.detroitlabs.photolibrary.model.Photo;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -52,4 +54,10 @@ public class PhotoController {
         return "alphabetical";
     }
 
+    @RequestMapping(value = "/", params = "q")
+    public String searchPhotos(@RequestParam("q") String searchTerm, ModelMap modelMap) {
+        List<Photo> searchResults = photoRepository.searchByName(searchTerm);
+        modelMap.put("searchResults", searchResults);
+        return "searchresults";
+    }
 }
